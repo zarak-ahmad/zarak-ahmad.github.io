@@ -111,15 +111,17 @@ export default function App() {
             <p className="lede">
               I&apos;m Zarak Ahmad, a full-stack developer in Islamabad. I
               take a product from the screen to the database: React on the
-              front, Node and Express or Laravel on the back, and access
+              front, Node and Express or Laravel and PHP on the back, and access
               rules that match how the business actually works.
             </p>
             <p>
-              I work at Naxovate Technologies on web applications, including
-              AI-integrated features. Alongside that I&apos;ve built a
-              library system with three role-based portals and a Laravel
-              inventory and point-of-sale app. I&apos;m completing a B.S. in
-              Computer Science at Virtual University of Pakistan.
+              I build web applications, web stores with admin panels, and
+              mobile applications. I work at Naxovate Technologies on web
+              applications, including AI-integrated features. Alongside that
+              I&apos;ve built a library system with three role-based portals
+              and a Laravel inventory and point-of-sale app. I&apos;m
+              completing B.S. in Computer Science at Virtual University of
+              Pakistan.
             </p>
             <dl className="facts">
               <div>
@@ -132,7 +134,7 @@ export default function App() {
               </div>
               <div>
                 <dt>Stack</dt>
-                <dd>MERN, Laravel, and TypeScript</dd>
+                <dd>MERN, Laravel, PHP, and TypeScript</dd>
               </div>
             </dl>
             <div className="profile-links">
@@ -166,6 +168,13 @@ export default function App() {
           <div className="projects">
             {projects.map((project) => (
               <article key={project.index} className="project">
+                {project.image ? (
+                  <img
+                    className="project-shot"
+                    src={project.image}
+                    alt=""
+                  />
+                ) : null}
                 <span>{project.index}</span>
                 <div>
                   <h3>{project.title}</h3>

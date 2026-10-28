@@ -45,6 +45,7 @@ export const projects = [
   {
     index: "01",
     title: "Library Management System",
+    image: "/library-boks-module.png",
     stack: "React · Node.js · Express · MongoDB",
     summary:
       "A MERN library platform with Admin, Librarian, and Student portals. Students browse, request, and reserve books. Staff issue and return them, and the system tracks fines, overdue items, support tickets, and reports. Sign-in uses JWT, and each role only sees what it is allowed to use.",
@@ -62,6 +63,7 @@ export const projects = [
   {
     index: "02",
     title: "Inventory Management System",
+    image: "/inventory-dashboard.png",
     stack: "Laravel · PHP · Bootstrap · SQLite",
     summary:
       "A Laravel shop system with role-based access for admins, managers, inventory staff, and cashiers. The point of sale takes a sale by name, SKU, or barcode and reduces stock as the invoice is saved. It also covers suppliers, low-stock alerts, reports, backups, and audit logs.",
@@ -84,7 +86,7 @@ export const experience = [
     company: "Upwork",
     when: "Current",
     points: [
-      "Laravel and MERN work: web apps, admin panels, REST APIs, dashboards, and SaaS features.",
+      "Laravel, PHP, and MERN work: web applications, web stores with admin panels, mobile applications, REST APIs, dashboards, and SaaS features.",
       "Portfolio projects are the library system and the Laravel inventory system with role-based access.",
     ],
   },
@@ -139,4 +141,4 @@ export const certificates = [
   },
 ];
 
-export const languages = ["English", "Urdu", "Punjabi"];
+export const languages = ["English", "Urdu", "Hindi"];
